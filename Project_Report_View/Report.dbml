@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="ReportDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.85.102;User ID=test" SettingsObjectName="Project_Report_View.Properties.Settings" SettingsPropertyName="DataSourceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.projectline" Member="projectline">
+    <Type Name="projectline">
+      <Column Name="[group]" Member="group" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="groupname" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.projectlist" Member="projectlist">
+    <Type Name="projectlist">
+      <Column Name="project" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="[group]" Member="group" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="projectname" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="itemname" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="itemid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="design" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="enable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="elc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sheudle" Member="sheudle">
+    <Type Name="sheudle">
+      <Column Name="project" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="[level]" Member="level" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="itemid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="itemname" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="plea" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pur" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="wo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="finwo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
